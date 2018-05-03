@@ -22,4 +22,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
           templateUrl: '/views/contact.html',
           controller: 'ContactCtrl'
       })
+      .state('aboutus', {
+          url: '/aboutus',
+          templateUrl: '/views/aboutus.html',
+          controller: 'AboutUsCtrl'
+      })
 });

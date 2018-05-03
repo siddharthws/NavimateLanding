@@ -1,0 +1,135 @@
+
+.card {
+  display:block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  -webkit-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.card:hover {
+  max-width: 380px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button-card {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.a-card {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.button-card:hover, .a-card:hover {
+  opacity: 0.7;
+}
+
+.carousel-indicators {
+  z-index: 8;
+}
+
+.carousel-item {
+  width: 100%;
+  height: auto;
+}
+
+.card img {
+  width: 100%;
+  max-height : 300px;
+}
+
+.flex-style-info {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.flex-style-info img{
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  padding-top: 70px;
+}
+
+.flex-style-card {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-style-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .flex-style-info img{
+    width: 100%;
+    height: auto;
+  }
+
+  .card-container {
+    margin-top: 0;
+    height: 100%;
+  }
+
+  .card-content {
+    padding-top: 200px;
+  }
+
+  .flex-style-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*Tablet*/
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .flex-style-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 70px;
+  }
+
+  .flex-style-info img{
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding-top: 70px;
+  }
+
+  .w3-half {
+    width: 100%;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+}
