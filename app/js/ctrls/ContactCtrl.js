@@ -18,14 +18,19 @@ app.controller('ContactCtrl', function($scope,$state){
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {scrollFunction()};
 
+    $(".con").on('click', function() {
+        this.classList.toggle("change");
+        $("#navbar-fixed-scroll").slideToggle();
+    });
+
     function scrollFunction() {
         var elmnt = document.getElementById("header");
         var currentScrollPos = window.pageYOffset;
 
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar-fixed-scroll").style.top = "0";
+            document.getElementById("navbar-menu-mobile").style.top = "0";
         } else {
-            document.getElementById("navbar-fixed-scroll").style.top = "-260px";
+            document.getElementById("navbar-menu-mobile").style.top = "-260px";
         }
         prevScrollpos = currentScrollPos;
     }
