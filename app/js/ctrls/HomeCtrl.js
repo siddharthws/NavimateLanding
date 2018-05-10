@@ -34,6 +34,13 @@ app.controller('HomeCtrl', function($scope,$state){
     $window.on('scroll resize', check_if_in_view);
     $window.trigger('scroll');
 
+    $(".con").on('click', function() {
+        this.classList.toggle("change");
+        $("#navbar-fixed-scroll").slideToggle();
+    });
+
+
+
     $(document).ready(function(){
         /*scroll to features*/
         $("a").on('click', function(event) {
@@ -74,9 +81,9 @@ app.controller('HomeCtrl', function($scope,$state){
         var currentScrollPos = window.pageYOffset;
 
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar-fixed-scroll").style.top = "0";
+            document.getElementById("navbar-menu-mobile").style.top = "0";
         } else {
-            document.getElementById("navbar-fixed-scroll").style.top = "-260px";
+            document.getElementById("navbar-menu-mobile").style.top = "-260px";
         }
         prevScrollpos = currentScrollPos;
     }
