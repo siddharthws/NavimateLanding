@@ -87,7 +87,7 @@ button:focus {  outline: 0;  }
     background-color: transparent;
     color: white;
     text-align: center;
-    height:10%;
+    height:3em;
     width: auto;
     padding: 15px;
     font-size: 22px;
