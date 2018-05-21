@@ -1,17 +1,17 @@
 /**
  * Created by Siddharth on 08-04-2018.
  */
-app.controller('HomeCtrl', function($scope,$state){
+app.controller('HomeCtrl', function($scope,$state, $window){
     $(document).ready(function() {
         $("html,body").animate({scrollTop: 0}, 0); //0ms for example
     });
 
     var $animation_elements = $('.animation-element');
-    var $window = $(window);
+    var $win = $(window);
 
     function check_if_in_view() {
-        var window_height = $window.height();
-        var window_top_position = $window.scrollTop();
+        var window_height = $win.height();
+        var window_top_position = $win.scrollTop();
         var window_bottom_position = (window_top_position + window_height);
 
         $.each($animation_elements, function() {
@@ -31,8 +31,8 @@ app.controller('HomeCtrl', function($scope,$state){
         });
     }
 
-    $window.on('scroll resize', check_if_in_view);
-    $window.trigger('scroll');
+    $win.on('scroll resize', check_if_in_view);
+    $win.trigger('scroll');
 
     $(".con").on('click', function() {
         this.classList.toggle("change");
@@ -49,9 +49,7 @@ app.controller('HomeCtrl', function($scope,$state){
                 var hash = this.hash;
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
+                }, 800, function(){});
             }
         });
 
@@ -88,11 +86,35 @@ app.controller('HomeCtrl', function($scope,$state){
         prevScrollpos = currentScrollPos;
     }
 
-    $scope.contact = function(){
-        $state.go("contact")
-    }
-
     $scope.aboutus = function(){
         $state.go("aboutus")
+    }
+
+    $scope.login = function () {
+        $window.open("https://biz.navimateapp.com/#/home/login", "_blank")
+    }
+
+    $scope.register = function () {
+        $window.open("https://biz.navimateapp.com/#/home/register", "_blank")
+    }
+
+    $scope.legal = function () {
+        $state.go("legal")
+    }
+
+    $scope.androidApp = function () {
+        $window.open("https://play.google.com/store/apps/details?id=com.biz.navimate", "_blank")
+    }
+
+    $scope.facebook = function () {
+        $window.open("https://www.facebook.com/navimateapp/", "_blank")
+    }
+
+    $scope.twitter = function () {
+        $window.open("https://twitter.com/NavimateApp", "_blank")
+    }
+
+    $scope.linkedin = function () {
+        $window.open("https://in.linkedin.com/company/navimateapp", "_blank")
     }
 })

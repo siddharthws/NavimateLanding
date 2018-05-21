@@ -1,11 +1,9 @@
 <!-- AboutUsPage View -->
 <div class="navigation d-flex flex-row justify-content-around w3-hide-small" id="navbar-fixed">
-    <button class="p-3 m-2 btn btn-background-white nav-item"><strong>SOLUTIONS</strong></button>
-    <button class="p-3 m-2 btn btn-background-white nav-item"><strong>PRICING</strong></button>
-    <button class="p-3 m-2 btn btn-background-white nav-item"><strong>SUPPORT</strong></button>
+    <button class="p-3 m-2 btn btn-background-white nav-item" ng-click="back()"><strong>BACK</strong></button>
     <div class="ml-auto d-flex flex-row justify-content-end">
-        <button class="p-3 m-2 btn btn-background-white nav-item"><strong>LOGIN</strong></button>
-        <button class="p-3 m-2 btn btn-background-white nav-item"><strong>REGISTER</strong></button>
+        <button class="p-3 m-2 btn btn-background-white nav-item" ng-click="login()"><strong>LOGIN</strong></button>
+        <button class="p-3 m-2 btn btn-background-white nav-item" ng-click="register()"><strong>REGISTER</strong></button>
     </div>
 </div>
 
@@ -22,207 +20,37 @@
     </div>
 
     <div class="navigation justify-content-around w3-hide-medium w3-hide-large" id="navbar-fixed-scroll">
-        <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>SOLUTIONS</strong></button>
-        <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>PRICING</strong></button>
-        <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>SUPPORT</strong></button>
+        <button class="p-3 m-1 btn btn-background-white w3-mobile" ng-click="back()"><strong>BACK</strong></button>
         <div class="ml-auto d-flex justify-content-end w3-mobile">
-            <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>LOGIN</strong></button>
-            <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>REGISTER</strong></button>
+            <button class="p-3 m-1 btn btn-background-white w3-mobile" ng-click="login()"><strong>LOGIN</strong></button>
+            <button class="p-3 m-1 btn btn-background-white w3-mobile" ng-click="register()"><strong>REGISTER</strong></button>
         </div>
     </div>
 </div>
 
-<div class="pb-3 background-white card-container">
+<div class="pb-3 card-container">
     <div class="card-content">
-        <div class="flex-style-info p-5">
-
-            <div id="demo" class="carousel slide w3-half" data-ride="carousel">
-
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/logo_icon.png" alt="Los Angeles"/>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/logo_icon.png" alt="Chicago"/>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/logo_icon.png" alt="New York"/>
-                    </div>
+        <div class="d-flex flex-column align-items-center">
+            <img class="title-image-icon" src="images/logo_icon_white.png"/>
+            <div class="mt-3 d-flex w-100 justify-content-center">
+                <div class="text-white text-right" style="width: 30em">
+                    <strong>
+                        Founded in 2017, Navimate aims to to create a single one-stop software solution for all the needs of a field team.
+                        The project started out to build an app which can act as a personal location directory for an individual.
+                        After experiencing the power of location technology and easy access in this age of smartphones, we realized the huge business potential that this sector provides.
+                        Navimate for business is an initiative to build the perfect field operations management system that caters to the needs of all levels of employees in a company.
+                    </strong>
                 </div>
 
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-            <div class="pl-5 pr-5 flex-column align-items-start w3-half">
-                <div class="pb-2"><h2><strong>Some background info</strong></h2></div>
-                <div class="text-grey"><strong>There are many variations of passages The first line of
-                    Lorem Ipsum,The first line of Lorem Ipsum,The first line of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line of Lorem Ipsum,The first line of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line of Lorem Ipsum,line of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line of Lorem Ipsum,line of Lorem Ipsum,The
-                    first line of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line of Lorem Ipsum,line of Lorem Ipsum,
-                    The first line of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line of Lorem Ipsum,</strong>
+                <div class="text-white ml-5" style="width: 30em">
+                    <strong>
+                        We are a bunch of coders, engineers and executives brought together by our single vision.
+                        At Navimate, customers are our top priority. We provide 24/7 customer support and have a dedicated team of developers to build, optimize and enhance the software.
+                        Our product serves many customers in different industries adn is used by thousands of engineers pan India to get their work done quickly.
+                        If you have more questions about navimate or would like to know how the software can be customized to your needs, feel free to give is a shout out.
+                    </strong>
                 </div>
             </div>
-        </div>
-
-        <div class="p-5 d-flex align-items-center flex-column">
-            <div><h2><strong>Meet the Team </strong></h2></div>
-            <div class="text-grey"><strong>All the Lorem Ipsum generatorsAll th ined with a handful of All the Lore Lorem Ipsum generators All the Lorem Ipsum generators</strong></div>
-            <div class="text-grey"><strong>words, combined with a handful of Al ined with a handful of All the Lorl the Lorem Ipsum generators All the Lorem Ipsum generators</strong></div>
-        </div>
-    </div>
-</div>
-<div class="flex-style-card justify-content-around align-items-center pt-5 m-1">
-    <div class="card animation-element slide-left p-2 m-2">
-        <img src="images/dummy pic.jpg" alt="John" style="width:100%">
-        <h1>John Doe</h1>
-        <p class="title">CEO & Founder, Example</p>
-        <p>Harvard University</p>
-        <div style="margin: 24px 0;">
-            <a href="#" class="a-card"><i class="fa fa-dribbble"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-facebook"></i></a>
-        </div>
-        <p><button class="button-card">Contact</button></p>
-    </div>
-
-    <div class="card animation-element slide-up p-2 m-2">
-        <img src="images/dummy pic.jpg" alt="John" style="width:100%">
-        <h1>John Doe</h1>
-        <p class="title">CEO & Founder, Example</p>
-        <p>Harvard University</p>
-        <div style="margin: 24px 0;">
-            <a href="#" class="a-card"><i class="fa fa-dribbble"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-facebook"></i></a>
-        </div>
-        <p><button class="button-card">Contact</button></p>
-    </div>
-
-    <div class="card animation-element slide-right p-2 m-2">
-        <img src="images/dummy pic.jpg" alt="John" style="width:100%">
-        <h1>John Doe</h1>
-        <p class="title">CEO & Founder, Example</p>
-        <p>Harvard University</p>
-        <div style="margin: 24px 0;">
-            <a href="#" class="a-card"><i class="fa fa-dribbble"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-facebook"></i></a>
-        </div>
-        <p><button class="button-card">Contact</button></p>
-    </div>
-</div>
-
-<div class="flex-style-card justify-content-around  align-items-center card-container pb-5">
-    <div class="card animation-element slide-left p-2 m-2">
-        <img src="images/dummy pic.jpg" alt="John" style="width:100%">
-        <h1>John Doe</h1>
-        <p class="title">CEO & Founder, Example</p>
-        <p>Harvard University</p>
-        <div style="margin: 24px 0;">
-            <a href="#" class="a-card"><i class="fa fa-dribbble"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-facebook"></i></a>
-        </div>
-        <p><button class="button-card">Contact</button></p>
-    </div>
-
-    <div class="card animation-element slide-up p-2 m-2">
-        <img src="images/dummy pic.jpg" alt="John" style="width:100%">
-        <h1>John Doe</h1>
-        <p class="title">CEO & Founder, Example</p>
-        <p>Harvard University</p>
-        <div style="margin: 24px 0;">
-            <a href="#" class="a-card"><i class="fa fa-dribbble"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-facebook"></i></a>
-        </div>
-        <p><button class="button-card">Contact</button></p>
-    </div>
-
-    <div class="card animation-element slide-right p-2 m-2">
-        <img src="images/dummy pic.jpg" alt="John" style="width:100%">
-        <h1>John Doe</h1>
-        <p class="title">CEO & Founder, Example</p>
-        <p>Harvard University</p>
-        <div style="margin: 24px 0;">
-            <a href="#" class="a-card"><i class="fa fa-dribbble"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="a-card"><i class="fa fa-facebook"></i></a>
-        </div>
-        <p><button class="button-card">Contact</button></p>
-    </div>
-</div>
-
-<div class="footer">
-    <div class="d-flex flex-column align-items-center justify-content-center background-grey">
-        <div class="d-flex flex-row justify-content-center">
-            <img class="footer-image" src="images/logo_text.png">
-            <img class="footer-image-icon" src="images/logo_icon_white.png"/>
-        </div>
-    </div>
-    <div class="p-3 d-flex flex-column justify-content-center background-black">
-        <div class="footer-content-1 d-flex p-3 justify-content-around">
-            <div class="p-3 m-2 flex-column align-items-start">
-                <div><a href="#"><strong> Mauris in turpis</strong></a></div>
-                <div><a href="#"><strong> Mauris in turpis</strong></a></div>
-                <div><a href="#"><strong> Mauris in turpis</strong></a></div>
-            </div>
-            <div class="p-3 m-2 flex-column align-items-start">
-                <div><a href="#"><strong> SERVICES</strong></a></div>
-                <div><a href="#"><strong> Lorem ipsum dolor</strong></a></div>
-                <div><a href="#"><strong> consectetur adipiscing elit</strong></a></div>
-            </div>
-            <div class="p-3 m-2 flex-column align-items-start">
-                <div><a href="#"><strong> SHOWCASE</strong></a></div>
-                <div><a href="#"><strong> WIDGETKIT</strong></a></div>
-                <div><a href="#"><strong> SUPPORT</strong></a></div>
-            </div>
-            <div class="p-3 m-2 flex-column align-items-start">
-                <div><a href ng-click="aboutus()"><strong> ABOUT US</strong></a></div>
-                <div><a href ng-click="contact()"><strong> CONTACT US</strong></a></div>
-                <div><a href="#"><strong> AFFILIATES</strong></a></div>
-                <div><a href="#"><strong> RESOURCES</strong></a></div>
-            </div>
-            <div class="m-2 d-flex flex-row align-items-start justify-content-start w3-hide-small">
-                <a href="#" class="m-1"><div class="facebook-logo"></div></a>
-                <a href="#" class="m-1"><div class="twitter-logo"></div></a>
-                <a href="#" class="m-1"><div class="google-logo"></div></a>
-                <a href="#" class="m-1"><div class="linkedin-logo"></div></a>
-            </div>
-        </div>
-
-        <div class="p-4 d-flex justify-content-end">
-            <div class="mr-auto d-flex flex-row align-items-start justify-content-start w3-hide-large w3-hide-medium">
-                <a href="#" class="m-1"><div class="facebook-logo"></div></a>
-                <a href="#" class="m-1"><div class="twitter-logo"></div></a>
-                <a href="#" class="m-1"><div class="google-logo"></div></a>
-                <a href="#" class="m-1"><div class="linkedin-logo"></div></a>
-            </div>
-            <div class="d-flex flex-column text-grey justify-content-center">&copy;Copyright. All rights reserved</div>
         </div>
     </div>
 </div>

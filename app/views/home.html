@@ -1,11 +1,11 @@
 <!-- Homepage View -->
 <div class="navigation justify-content-around w3-hide-small" id="navbar">
-    <button class="p-3 m-2 btn btn-background-white w3-mobile"><strong>SOLUTIONS</strong></button>
-    <button class="p-3 m-2 btn btn-background-white w3-mobile"><strong>PRICING</strong></button>
-    <button class="p-3 m-2 btn btn-background-white w3-mobile"><strong>SUPPORT</strong></button>
+    <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#solutions"><strong>SOLUTIONS</strong></a>
+    <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#features"><strong>FEATURES</strong></a>
+    <a class="p-3 m-1 btn btn-background-white w3-mobile" href ng-click="aboutus()"><strong>ABOUT US</strong></a>
     <div class="ml-auto d-flex justify-content-end w3-mobile">
-        <button class="p-3 m-2 btn btn-background-white w3-mobile"><strong>LOGIN</strong></button>
-        <button class="p-3 m-2 btn btn-background-white w3-mobile"><strong>REGISTER</strong></button>
+        <button class="p-3 m-2 btn btn-background-white" ng-click="login()"><strong>LOGIN</strong></button>
+        <button class="p-3 m-2 btn btn-background-white" ng-click="register()"><strong>REGISTER</strong></button>
     </div>
 </div>
 <div id="navbar-menu-mobile">
@@ -21,90 +21,97 @@
     </div>
 
     <div class="navigation justify-content-around w3-hide-medium w3-hide-large" id="navbar-fixed-scroll">
-        <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>SOLUTIONS</strong></button>
-        <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>PRICING</strong></button>
-        <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>SUPPORT</strong></button>
+        <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#solutions"><strong>SOLUTIONS</strong></a>
+        <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#features"><strong>FEATURES</strong></a>
+        <a class="p-3 m-1 btn btn-background-white w3-mobile" href ng-click="aboutus()"><strong>ABOUT US</strong></a>
         <div class="ml-auto d-flex justify-content-end w3-mobile">
-            <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>LOGIN</strong></button>
-            <button class="p-3 m-1 btn btn-background-white w3-mobile"><strong>REGISTER</strong></button>
+            <button class="p-3 m-2 btn btn-background-white" ng-click="login()"><strong>LOGIN</strong></button>
+            <button class="p-3 m-2 btn btn-background-white" ng-click="register()"><strong>REGISTER</strong></button>
         </div>
     </div>
 </div>
-<div class="bg header" id="header">
-    <div class="header-content">
-        <div class="navigation justify-content-around w3-hide-small">
-            <button class="p-3 m-2 btn btn-background-white"><strong>SOLUTIONS</strong></button>
-            <button class="p-3 m-2 btn btn-background-white"><strong>PRICING</strong></button>
-            <button class="p-3 m-2 btn btn-background-white"><strong>SUPPORT</strong></button>
-            <div class="ml-auto d-flex flex-row justify-content-end">
-                <button class="p-3 m-2 btn btn-background-white"><strong>LOGIN</strong></button>
-                <button class="p-3 m-2 btn btn-background-white"><strong>REGISTER</strong></button>
-            </div>
+<div class="bg header d-flex flex-column justify-content-between" id="header">
+    <div class="navigation justify-content-around w3-hide-small">
+        <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#solutions"><strong>SOLUTIONS</strong></a>
+        <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#features"><strong>FEATURES</strong></a>
+        <a class="p-3 m-1 btn btn-background-white w3-mobile" href ng-click="aboutus()"><strong>ABOUT US</strong></a>
+        <div class="ml-auto d-flex flex-row justify-content-end">
+            <button class="p-3 m-2 btn btn-background-white" ng-click="login()"><strong>LOGIN</strong></button>
+            <button class="p-3 m-2 btn btn-background-white" ng-click="register()"><strong>REGISTER</strong></button>
         </div>
-        <div class="d-flex flex-column align-contents-center justify-content-center">
-            <div class="mt-5 title d-flex flex-column align-items-center">
-                <div class="p-2 d-flex justify-content-center">
-                    <div class="d-flex flex-column align-items-end">
-                        <img class="title-image w3-hide-small" src="images/logo_text.png">
-                        <img class="title-image-small w3-hide-large w3-hide-medium" src="images/logo_text.png">
-                        <div class="text-white w3-hide-large w3-hide-medium"><h2>Field Operations Made Easy</h2></div>
-                        <div class="text-white w3-hide-small"><h1>Field Operations Made Easy</h1></div>
-                    </div>
-                    <img class="title-image-icon w3-hide-small" src="images/logo_icon_white.png"/>
-                    <img class="title-image-small w3-hide-large w3-hide-medium" src="images/logo_icon_white.png">
+    </div>
+    <div class="d-flex flex-column justify-content-center">
+        <div class="mt-5 title d-flex flex-column align-items-center">
+            <div class="p-2 d-flex justify-content-center">
+                <div class="d-flex flex-column align-items-end">
+                    <img class="title-image w3-hide-small" src="images/logo_text.png">
+                    <img class="title-image-small w3-hide-large w3-hide-medium" src="images/logo_text.png">
+                    <div class="text-white w3-hide-large w3-hide-medium"><h2>Field Operations Made Easy</h2></div>
+                    <div class="text-white w3-hide-small"><h1>Field Operations Made Easy</h1></div>
                 </div>
+                <img class="title-image-icon w3-hide-small" src="images/logo_icon_white.png"/>
+                <img class="title-image-small w3-hide-large w3-hide-medium" src="images/logo_icon_white.png">
+            </div>
 
-                <div class="p-2 d-flex justify-content-center">
-                    <div class="d-flex flex-column align-items-center">
-                        <div class="text-white"><strong> Have agents in field ?</strong></div>
-                        <div class="text-white"><strong>Trouble Managing the team ?</strong></div>
-                        <div class="text-white"><strong>Too much data to handle ?</strong></div>
-                        <div class="mb-2 text-white"><strong>Don't know what to do ?</strong></div>
-                        <div class="mb-5 text-white"><strong>Navimate is here !!!</strong></div>
-                    </div>
-                    <button class="ml-5 mt-5 btn btn-outline-white w3-hide-large"><strong>Sign Up For Free</strong></button>
-                </div>
-                <button class="mb-5 btn btn-outline-white w3-hide-medium w3-hide-small"><strong>Sign Up For Free</strong></button>
-                <div class="text-white"><strong>more...</strong></div>
-                <a href="#section2" class=" ct-btn-scroll ct-js-btn-scroll"><div class="p-2 text-white arrow bounce"></div></a>
+            <div class="mt-5 d-flex align-items-center">
+                <h4 class="text-white text-xenter">
+                    <strong>
+                        A software that strives to bridge the communication gap between office and field. Try it for free and scale it for your operations quickly. <br>
+                        Navimate aims to increase transparency into fieldwork by using a strict yet privacy-aware workflow. <br>
+                    </strong>
+                </h4>
             </div>
+            <button class="mt-5 btn btn-outline-white" ng-click="register()"><strong>Sign Up For Free</strong></button>
         </div>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+        <div class="text-white mb-2"><strong>more...</strong></div>
+        <a href="#solutions" class=" ct-btn-scroll ct-js-btn-scroll"><div class="p-2 text-white arrow bounce"></div></a>
     </div>
 </div>
 
 <div class="content-1 pt-3 pb-3 background-grey-1">
-    <div class=" flex-style p-5 justify-content-around animation-element slide-left" id="section2">
-        <div class="d-flex p-5 justify-content-start">
-            <img class="feature-icon align-items-end" src="images/logo_icon.png"/>
-            <div class="flex-column align-items-start">
-                <div class="pb-2"><h5><strong>Lorem Ipsum generators on</strong></h5></div>
-                <div class="text-grey"><strong>There are many variations of passages The first line of
-                    Lorem Ipsum,The first line of Lorem Ipsum,The first line of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line of Lorem Ipsum,</strong></div>
+    <div class="fbx-oriented p-5 justify-content-around animation-element slide-left" id="solutions">
+        <div class="fbx-oriented-reverse flex-1 align-items-center p-5 justify-content-start">
+            <img class="feature-icon" src="images/ic_automation_blue.png"/>
+            <div class="d-flex flex-column align-items-center">
+                <div class="pb-2"><h5><strong>Automate</strong></h5></div>
+                <div class="text-grey text-center">
+                    <strong>
+                        Automate your operations using cloud based system designed to streamline field operations.
+                        Upload data using custom templates and manage day to day activities using Navimate dashboard and app.
+                    </strong>
+                </div>
             </div>
         </div>
-        <div class="d-flex p-5 justify-content-start">
-            <img class="feature-icon align-items-end" src="images/logo_icon.png"/>
-            <div class="flex-column align-items-start">
-                <div class="pb-2"><h5><strong>standard chunk of Lorem</strong></h5></div>
-                <div class="text-grey"><strong>There are many variations of passages The first line of
-                    Lorem Ipsum,The first line of Lorem Ipsum,The first line of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line of Lorem Ipsum,</strong></div>
+        <div class="fbx-oriented-reverse flex-1 align-items-center p-5 justify-content-start">
+            <img class="feature-icon" src="images/ic_da_blue.png"/>
+            <div class="d-flex flex-column align-items-center">
+                <div class="pb-2"><h5><strong>Analyze</strong></h5></div>
+                <div class="text-grey text-center">
+                    <strong>
+                        Powerful analytics with a variety of filters, sorters & table customizers.
+                        Export to excel and backup your data for added security.
+                    </strong>
+                </div>
             </div>
         </div>
-        <div class="d-flex p-5 justify-content-start">
-            <img class="feature-icon align-items-end" src="images/logo_icon.png"/>
-            <div class="flex-column align-items-start">
-                <div class="pb-2"><h5><strong>There are many variations of</strong></h5></div>
-                <div class="text-grey"><strong>There are many variations of passages The first line of
-                    Lorem Ipsum,The first line of Lorem Ipsum,The first line of Lorem Ipsum,The first line
-                    of Lorem Ipsum,The first line of Lorem Ipsum,</strong></div>
+        <div class="fbx-oriented-reverse flex-1 align-items-center p-5 justify-content-start">
+            <img class="feature-icon" src="images/ic_sol_3.png"/>
+            <div class="d-flex flex-column align-items-center">
+                <div class="pb-2"><h5><strong>Secure</strong></h5></div>
+                <div class="text-grey text-center">
+                    <strong>
+                        Secure your operations with a multitude of anti-theft features.
+                        Reduce expense costs and increase team productivity
+                    </strong>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="content-2 pt-3 pb-3 background-white">
+<div class="content-2 pt-3 pb-3 background-white" id="features">
     <div class="flex-style pt-5 justify-content-around animation-element slide-left">
         <img class="featur-image align-items-end" src="images/feature2.png"/>
         <div class="pr-5 pl-5 flex-column align-items-start">
@@ -139,50 +146,48 @@
 </div>
 
 <div class="footer">
-    <div class="d-flex flex-column align-items-center justify-content-center background-grey">
-        <div id="back-top"><a href="#navbar" class=" ct-btn-scroll ct-js-btn-scroll"><div class="text-white arrow-up bounce"></div></a></div>
-        <div class="d-flex flex-row justify-content-center">
+    <div class="d-flex flex-column align-items-center justify-content-center background-grey p-1">
+        <div id="back-top"><a href="#navbar" class=" ct-btn-scroll ct-js-btn-scroll mt-1"><div class="text-white arrow-up bounce"></div></a></div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
             <img class="footer-image" src="images/logo_text.png">
             <img class="footer-image-icon" src="images/logo_icon_white.png"/>
         </div>
     </div>
     <div class="p-3 d-flex flex-column justify-content-center background-black">
         <div class="footer-content-1 d-flex p-3 justify-content-around">
-            <div class="p-3 m-2 flex-column align-items-start">
-                <div><a href="#"><strong> Mauris in turpis</strong></a></div>
-                <div><a href="#"><strong> Mauris in turpis</strong></a></div>
-                <div><a href="#"><strong> Mauris in turpis</strong></a></div>
+            <div class="flex-column align-items-start">
+                <h4><strong>Contact Us</strong></h4>
+                <div class="ml-1"><strong>+91 95451 05368</strong></div>
+                <div class="ml-1"><strong>navimateapp@gmail.com</strong></div>
             </div>
-            <div class="p-3 m-2 flex-column align-items-start">
-                <div><a href="#"><strong> SERVICES</strong></a></div>
-                <div><a href="#"><strong> Lorem ipsum dolor</strong></a></div>
-                <div><a href="#"><strong> consectetur adipiscing elit</strong></a></div>
+            <div class="flex-column align-items-start">
+                <h4><strong>For Business</strong></h4>
+                <div><a href="#solutions"><strong>Solutions</strong></a></div>
+                <div><a href="#features"><strong>Features</strong></a></div>
+                <div><a href ng-click="login()"><strong>Login</strong></a></div>
+                <div><a href ng-click="register()"><strong>Register</strong></a></div>
             </div>
-            <div class="p-3 m-2 flex-column align-items-start">
-                <div><a href="#"><strong> SHOWCASE</strong></a></div>
-                <div><a href="#"><strong> WIDGETKIT</strong></a></div>
-                <div><a href="#"><strong> SUPPORT</strong></a></div>
+            <div class="flex-column align-items-start">
+                <h4><strong>Download</strong></h4>
+                <div><a href ng-click="androidApp()"><strong>Android</strong></a></div>
             </div>
-            <div class="p-3 m-2 flex-column align-items-start">
-                <div><a href ng-click="aboutus()"><strong> ABOUT US</strong></a></div>
-                <div><a href ng-click="contact()"><strong> CONTACT US</strong></a></div>
-                <div><a href="#"><strong> AFFILIATES</strong></a></div>
-                <div><a href="#"><strong> RESOURCES</strong></a></div>
+            <div class="flex-column align-items-start">
+                <h4><strong>Navimate</strong></h4>
+                <div><a href ng-click="aboutus()"><strong>About Us</strong></a></div>
+                <div><a href ng-click="legal()"><strong>Legal</strong></a></div>
             </div>
             <div class="m-2 d-flex flex-row align-items-start justify-content-start w3-hide-small">
-                <a href="#" class="m-1"><div class="facebook-logo"></div></a>
-                <a href="#" class="m-1"><div class="twitter-logo"></div></a>
-                <a href="#" class="m-1"><div class="google-logo"></div></a>
-                <a href="#" class="m-1"><div class="linkedin-logo"></div></a>
+                <a href ng-click="facebook()" class="m-1"><div class="facebook-logo"></div></a>
+                <a href ng-click="twitter()" class="m-1"><div class="twitter-logo"></div></a>
+                <a href ng-click="linkedin()" class="m-1"><div class="linkedin-logo"></div></a>
             </div>
         </div>
 
         <div class="p-4 d-flex justify-content-end">
             <div class="mr-auto d-flex flex-row align-items-start justify-content-start w3-hide-large w3-hide-medium">
-                <a href="#" class="m-1"><div class="facebook-logo"></div></a>
-                <a href="#" class="m-1"><div class="twitter-logo"></div></a>
-                <a href="#" class="m-1"><div class="google-logo"></div></a>
-                <a href="#" class="m-1"><div class="linkedin-logo"></div></a>
+                <a href ng-click="facebook()" class="m-1"><div class="facebook-logo"></div></a>
+                <a href ng-click="twitter()" class="m-1"><div class="twitter-logo"></div></a>
+                <a href ng-click="linkedin()" class="m-1"><div class="linkedin-logo"></div></a>
             </div>
             <div class="d-flex flex-column text-grey justify-content-center">&copy;Copyright. All rights reserved</div>
         </div>

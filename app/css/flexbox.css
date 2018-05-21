@@ -1,0 +1,26 @@
+.fbx-oriented,
+.fbx-oriented-reverse {
+    display: flex;
+}
+
+@media screen and (orientation: landscape){
+    .fbx-oriented {
+        flex-direction: row;
+    }
+
+    .fbx-oriented-reverse {
+        flex-direction: column;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .fbx-oriented {
+        flex-direction: column;
+    }
+
+    .fbx-oriented-reverse {
+        flex-direction: row;
+    }
+}
+
+.flex-1 { flex: 1; }

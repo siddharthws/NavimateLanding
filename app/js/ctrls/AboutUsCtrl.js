@@ -1,7 +1,7 @@
 /**
  * Created by Chandel on 04-05-2018.
  */
-app.controller('AboutUsCtrl', function($scope, $state){
+app.controller('AboutUsCtrl', function($scope, $state, $window){
     $(document).ready(function() {
         $("html,body").animate({scrollTop: 0}, 0); //0ms for example
     });
@@ -11,7 +11,7 @@ app.controller('AboutUsCtrl', function($scope, $state){
     });*/
 
     var $animation_elements = $('.animation-element');
-    var $window = $(window);
+    var $win = $(window);
 
     $(".con").on('click', function() {
         this.classList.toggle("change");
@@ -19,8 +19,8 @@ app.controller('AboutUsCtrl', function($scope, $state){
     });
 
     function check_if_in_view() {
-        var window_height = $window.height();
-        var window_top_position = $window.scrollTop();
+        var window_height = $win.height();
+        var window_top_position = $win.scrollTop();
         var window_bottom_position = (window_top_position + window_height);
 
         $.each($animation_elements, function() {
@@ -40,8 +40,8 @@ app.controller('AboutUsCtrl', function($scope, $state){
         });
     }
 
-    $window.on('scroll resize', check_if_in_view);
-    $window.trigger('scroll');
+    $win.on('scroll resize', check_if_in_view);
+    $win.trigger('scroll');
 
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {scrollFunction()};
@@ -64,5 +64,17 @@ app.controller('AboutUsCtrl', function($scope, $state){
 
     $scope.aboutus = function(){
         $state.go("aboutus")
+    }
+
+    $scope.login = function () {
+        $window.open("https://biz.navimateapp.com/#/home/login", "_blank")
+    }
+
+    $scope.register = function () {
+        $window.open("https://biz.navimateapp.com/#/home/register", "_blank")
+    }
+
+    $scope.back = function () {
+        $state.go("home")
     }
 })
