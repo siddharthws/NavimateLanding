@@ -1,40 +1,42 @@
 <!-- Homepage View -->
 <div class="navigation justify-content-around w3-hide-small" id="navbar">
-    <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#solutions"><strong>SOLUTIONS</strong></a>
-    <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#features"><strong>FEATURES</strong></a>
-    <a class="p-3 m-1 btn btn-background-white w3-mobile" href ng-click="aboutus()"><strong>ABOUT US</strong></a>
+    <a class="p-3 m-2 btn btn-background-white w3-mobile" href="#solutions"><strong>SOLUTIONS</strong></a>
+    <a class="p-3 m-2 btn btn-background-white w3-mobile" href="#features"><strong>FEATURES</strong></a>
+    <a class="p-3 m-2 btn btn-background-white w3-mobile" href="#about_us"><strong>ABOUT US</strong></a>
     <div class="ml-auto d-flex justify-content-end w3-mobile">
         <button class="p-3 m-2 btn btn-background-white" ng-click="login()"><strong>LOGIN</strong></button>
         <button class="p-3 m-2 btn btn-background-white" ng-click="register()"><strong>REGISTER</strong></button>
     </div>
 </div>
 <div id="navbar-menu-mobile">
-    <div class="navigation justify-content-end w3-hide-medium w3-hide-large align-items-center">
-        <div class="mr-auto">
-            <img class="header-navimate-text-image" src="images/logo_text.png">
-        </div>
-        <div class="con">
+    <div class="d-flex flex-row justify-content-end align-items-center">
+        <span class="mr-auto con">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-        </div>
+        </span>
+        <img class="mr-auto header-navimate-text-image" src="images/logo_text.png">
+
     </div>
 
-    <div class="navigation justify-content-around w3-hide-medium w3-hide-large" id="navbar-fixed-scroll">
-        <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#solutions"><strong>SOLUTIONS</strong></a>
-        <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#features"><strong>FEATURES</strong></a>
-        <a class="p-3 m-1 btn btn-background-white w3-mobile" href ng-click="aboutus()"><strong>ABOUT US</strong></a>
-        <div class="ml-auto d-flex justify-content-end w3-mobile">
-            <button class="p-3 m-2 btn btn-background-white" ng-click="login()"><strong>LOGIN</strong></button>
-            <button class="p-3 m-2 btn btn-background-white" ng-click="register()"><strong>REGISTER</strong></button>
+    <div id="navbar-fixed-scroll" class="w3-hide-medium w3-hide-large">
+        <div class="d-flex flex-column align-items-center">
+            <a class="p-3 m-2 btn btn-background-white full-width" href="#solutions" ng-click="toggleClose()"><strong>SOLUTIONS</strong></a>
+            <a class="p-3 m-2 btn btn-background-white full-width" href="#features" ng-click="toggleClose()"><strong>FEATURES</strong></a>
+            <a class="p-3 m-2 btn btn-background-white full-width" href="#about_us" ng-click="toggleClose()"><strong>ABOUT US</strong></a>
+            <div class="d-flex half-width justify-content-around">
+                <button class="p-3 m-2 btn btn-background-white full-width" ng-click="login()"><strong>LOGIN</strong></button>
+                <button class="p-3 m-2 btn btn-background-white full-width" ng-click="register()"><strong>REGISTER</strong></button>
+            </div>
         </div>
+
     </div>
 </div>
 <div class="bg header d-flex flex-column justify-content-between" id="header">
     <div class="navigation justify-content-around w3-hide-small">
-        <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#solutions"><strong>SOLUTIONS</strong></a>
-        <a class="p-3 m-1 btn btn-background-white w3-mobile" href="#features"><strong>FEATURES</strong></a>
-        <a class="p-3 m-1 btn btn-background-white w3-mobile" href ng-click="aboutus()"><strong>ABOUT US</strong></a>
+        <a class="p-3 m-2 btn btn-background-white w3-mobile" href="#solutions"><strong>SOLUTIONS</strong></a>
+        <a class="p-3 m-2 btn btn-background-white w3-mobile" href="#features"><strong>FEATURES</strong></a>
+        <a class="p-3 m-2 btn btn-background-white w3-mobile" href="#about_us"><strong>ABOUT US</strong></a>
         <div class="ml-auto d-flex flex-row justify-content-end">
             <button class="p-3 m-2 btn btn-background-white" ng-click="login()"><strong>LOGIN</strong></button>
             <button class="p-3 m-2 btn btn-background-white" ng-click="register()"><strong>REGISTER</strong></button>
@@ -43,39 +45,38 @@
     <div class="d-flex flex-column justify-content-center">
         <div class="mt-2 title d-flex flex-column align-items-center">
             <div class="p-2 d-flex justify-content-center">
-                <div class="d-flex flex-column align-items-end">
+                <div class="d-flex flex-column align-items-center">
+                    <img class="foots-icon w3-hide-large w3-hide-medium" src="images/logo_icon_white.png">
                     <img class="title-image w3-hide-small" src="images/logo_text.png">
                     <img class="title-image-small w3-hide-large w3-hide-medium" src="images/logo_text.png">
-                    <div class="text-white w3-hide-large w3-hide-medium"><h2>Field Operations Made Easy</h2></div>
-                    <div class="text-white w3-hide-small"><h1>Field Operations Made Easy</h1></div>
+                    <div class="text-white w3-hide-large w3-hide-medium"><h3><strong>Field Operations Made Easy</strong></h3></div>
+                    <div class="text-white w3-hide-small"><strong><h1>Field Operations Made Easy</h1></strong></div>
                 </div>
                 <img class="title-image-icon w3-hide-small" src="images/logo_icon_white.png"/>
-                <img class="title-image-small w3-hide-large w3-hide-medium" src="images/logo_icon_white.png">
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="ml-3 mr-3 d-flex align-items-center">
                 <h4 class="text-white text-center" style="max-width: 20em">
-                    <strong>
-                        A software that strives to bridge the communication gap between office and field by increasing transparency into fieldwork using a strict yet privacy-aware workflow. <br>
-                    </strong>
+                        Navimate is a field operation management system designed to bridge the communication gap between office managers and field agents by using the latest in web, mobile and location technology.
                 </h4>
-                <button class="ml-5 btn btn-outline-white" ng-click="register()"><strong>Sign Up For Free</strong></button>
+                <button class="ml-5 btn btn-outline-white w3-hide-small" ng-click="register()"><strong>Sign Up For Free</strong></button>
             </div>
+            <button class="m-3 btn btn-outline-white w3-hide-large w3-hide-medium" ng-click="register()"><strong>Sign Up For Free</strong></button>
         </div>
     </div>
     <div class="d-flex flex-column align-items-center">
         <div class="text-white mb-2"><strong>more...</strong></div>
-        <a href="#solutions" class=" ct-btn-scroll ct-js-btn-scroll"><div class="p-2 text-white arrow bounce"></div></a>
+        <a href="#solutions"><div class="p-2 text-white arrow bounce"></div></a>
     </div>
 </div>
 
 <div class="content-1 pt-3 pb-3 background-grey-1">
-    <div class="fbx-oriented p-5 justify-content-around animation-element slide-left" id="solutions">
+    <div class="fbx-oriented justify-content-around animation-element slide-left padding-control" id="solutions">
         <div class="fbx-oriented-reverse flex-1 align-items-center p-5 justify-content-start">
             <img class="feature-icon" src="images/ic_automation_blue.png"/>
             <div class="d-flex flex-column align-items-center">
                 <div class="pb-2"><h5><strong>Automate</strong></h5></div>
-                <div class="text-grey text-center">
+                <div class="text-grey justify-text">
                     <strong>
                         Automate your operations using cloud based system designed to streamline field operations.
                         Upload data using custom templates and manage day to day activities using Navimate dashboard and app.
@@ -87,7 +88,7 @@
             <img class="feature-icon" src="images/ic_da_blue.png"/>
             <div class="d-flex flex-column align-items-center">
                 <div class="pb-2"><h5><strong>Analyze</strong></h5></div>
-                <div class="text-grey text-center">
+                <div class="text-grey justify-text">
                     <strong>
                         Powerful analytics with a variety of filters, sorters & table customizers.
                         Export to excel and backup your data for added security.
@@ -99,7 +100,7 @@
             <img class="feature-icon" src="images/ic_sol_3.png"/>
             <div class="d-flex flex-column align-items-center">
                 <div class="pb-2"><h5><strong>Secure</strong></h5></div>
-                <div class="text-grey text-center">
+                <div class="text-grey justify-text">
                     <strong>
                         Secure your operations with a multitude of anti-theft features.
                         Reduce expense costs and increase team productivity
@@ -112,10 +113,10 @@
 
 <div class="content-2 pt-3 pb-3 background-white" id="features">
     <div class="flex-style pt-5 justify-content-around animation-element slide-left">
-        <img class="featur-image align-items-end" src="images/feature2.png"/>
+        <img class="featur-image align-items-end" src="images/feature2.webp" id="feature2"/>
         <div class="pr-5 pl-5 flex-column align-items-start">
             <div class="pb-2"><h3><strong>Viewing</strong></h3></div>
-            <div class="text-grey"><strong>Import, filter, sort, customize & export your data using Navimate tables.
+            <div class="text-grey justify-text"><strong>Import, filter, sort, customize & export your data using Navimate tables.
                 </strong></div>
         </div>
     </div>
@@ -124,55 +125,81 @@
 
         <div class="pl-5 flex-column align-items-start">
             <div class="pb-2"><h3><strong>Templating</strong></h3></div>
-            <div class="text-grey"><strong>
+            <div class="text-grey justify-text"><strong>
                 Templates provides a highly customizable
                 way of editing and viewing your data.
                 Choose from a list of fields and create
                 as many templates as you like.</strong></div>
         </div>
-        <img class="featur-image align-items-end" src="images/feature1.png"/>
+        <img class="featur-image align-items-end" src="images/feature1.webp" id="feature1"/>
     </div>
 
     <div class="flex-style pt-5 justify-content-around animation-element slide-left">
-        <img class="featur-image align-items-end" src="images/feature3.png"/>
+        <img class="featur-image align-items-end" src="images/feature3.webp" id="feature3"/>
         <div class="pr-5 pl-5 flex-column align-items-start">
             <div class="pb-2"><h3><strong>Editing </strong></h3></div>
-            <div class="text-grey"><strong>A multi-selector interface with different
+            <div class="text-grey justify-text"><strong>A multi-selector interface with different
                 types of pickers, selectors and filler components
                 lets you edit large amounts of data quickly</strong></div>
         </div>
     </div>
 </div>
 
+<div class="content-3 background-grey-1 m-3 p-3 card-container" id="about_us">
+        <div class="fbx-oriented-reverse d-flex flex-column align-items-center">
+            <div class="text-grey justify-text"><h3><strong>About Us
+            </strong></h3></div>
+            <div class="fbx-oriented d-flex w-100 justify-content-center">
+                <div class="text-grey m-3 justify-text">
+                    <strong>
+                        Founded in 2017, Navimate aims to to create a single one-stop software solution for all the needs of a field team.
+                        The project started out to build an app which can act as a personal location directory for an individual.
+                        After experiencing the power of location technology and easy access in this age of smartphones, we realized the huge business potential that this sector provides.
+                        Navimate for business is an initiative to build the perfect field operations management system that caters to the needs of all levels of employees in a company.
+                    </strong>
+                </div>
+
+                <div class="text-grey m-3 justify-text">
+                    <strong>
+                        We are a bunch of coders, engineers and executives brought together by our single vision.
+                        At Navimate, customers are our top priority. We provide 24/7 customer support and have a dedicated team of developers to build, optimize and enhance the software.
+                        Our product serves many customers in different industries adn is used by thousands of engineers pan India to get their work done quickly.
+                        If you have more questions about navimate or would like to know how the software can be customized to your needs, feel free to give is a shout out.
+                    </strong>
+                </div>
+            </div>
+        </div>
+</div>
+
 <div class="footer">
     <div class="d-flex flex-column align-items-center justify-content-center background-grey p-1">
-        <div id="back-top"><a href="#navbar" class=" ct-btn-scroll ct-js-btn-scroll mt-1"><div class="text-white arrow-up bounce"></div></a></div>
+        <div><a href="#navbar-menu-mobile" class="mt-1"><div class="text-white arrow-up bounce"></div></a></div>
         <div class="d-flex flex-row justify-content-center align-items-center">
             <img class="footer-image" src="images/logo_text.png">
             <img class="footer-image-icon" src="images/logo_icon_white.png"/>
         </div>
     </div>
-    <div class="p-3 d-flex flex-column justify-content-center background-black">
-        <div class="footer-content-1 d-flex p-3 justify-content-around">
-            <div class="flex-column align-items-start">
+    <div class="p-1 pt-3 pb-2 d-flex flex-column justify-content-around background-black">
+        <div class="footer-content-1 responsive-grid justify-content-around">
+            <div class="flex-column align-items-center">
                 <h4><strong>Contact Us</strong></h4>
-                <div class="ml-1"><strong>+91 95451 05368</strong></div>
-                <div class="ml-1"><strong>navimateapp@gmail.com</strong></div>
+                <div class="text-grey"><strong>+91 95451 05368</strong></div>
+                <div class="text-grey"><strong>navimateapp@gmail.com</strong></div>
             </div>
-            <div class="flex-column align-items-start">
+            <div class="flex-column align-items-center">
                 <h4><strong>For Business</strong></h4>
                 <div><a href="#solutions"><strong>Solutions</strong></a></div>
                 <div><a href="#features"><strong>Features</strong></a></div>
                 <div><a href ng-click="login()"><strong>Login</strong></a></div>
                 <div><a href ng-click="register()"><strong>Register</strong></a></div>
             </div>
-            <div class="flex-column align-items-start">
+            <div class="flex-column align-items-center">
                 <h4><strong>Download</strong></h4>
                 <div><a href ng-click="androidApp()"><strong>Android</strong></a></div>
             </div>
-            <div class="flex-column align-items-start">
+            <div class="flex-column align-items-center">
                 <h4><strong>Navimate</strong></h4>
-                <div><a href ng-click="aboutus()"><strong>About Us</strong></a></div>
+                <div><a href="#about_us"><strong>About Us</strong></a></div>
                 <div><a href ng-click="legal()"><strong>Legal</strong></a></div>
             </div>
             <div class="m-2 d-flex flex-row align-items-start justify-content-start w3-hide-small">
@@ -182,13 +209,13 @@
             </div>
         </div>
 
-        <div class="p-4 d-flex justify-content-end">
+        <div class="p-3 d-flex justify-content-end">
             <div class="mr-auto d-flex flex-row align-items-start justify-content-start w3-hide-large w3-hide-medium">
                 <a href ng-click="facebook()" class="m-1"><div class="facebook-logo"></div></a>
                 <a href ng-click="twitter()" class="m-1"><div class="twitter-logo"></div></a>
                 <a href ng-click="linkedin()" class="m-1"><div class="linkedin-logo"></div></a>
             </div>
-            <div class="d-flex flex-column text-grey justify-content-center">&copy;Copyright. All rights reserved</div>
+            <div class="d-flex flex-column text-grey justify-content-center mobile-text">&copy;Copyright. All rights reserved</div>
         </div>
     </div>
 </div>
