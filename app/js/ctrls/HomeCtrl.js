@@ -1,7 +1,7 @@
 /**
  * Created by Siddharth on 08-04-2018.
  */
-app.controller('HomeCtrl', function($scope,$state, $window){
+app.controller('HomeCtrl', function($scope, $state, $window){
     $(document).ready(function() {
         $("html,body").animate({scrollTop: 0}, 0); //0ms for example
     });
@@ -22,13 +22,34 @@ app.controller('HomeCtrl', function($scope,$state, $window){
 
             //check to see if this current container is within viewport
             if ((element_bottom_position >= window_top_position) &&
-                (element_top_position <= window_bottom_position)) {
+                (element_top_position <= window_bottom_position )) {
                 $element.addClass('in-view');
             }
             /*else {
               $element.removeClass('in-view');
             }*/
         });
+    }
+
+    function imageError(num,image){
+        image.onerror = "";
+        switch(num){
+            case 1:
+            {
+                image.src = "/images/feature1.png";
+            }
+            break;
+            case 2:
+            {
+                image.src = "/images/feature2.png";
+            }
+            break;
+            case 3:
+            {
+                image.src = "/images/feature3.png";
+            }
+            break;
+        }
     }
 
     $win.on('scroll resize', check_if_in_view);
@@ -39,8 +60,11 @@ app.controller('HomeCtrl', function($scope,$state, $window){
         $("#navbar-fixed-scroll").slideToggle();
     });
 
-
-
+    var ex_pixels = 0;
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if(width > 600){
+        ex_pixels = -70;
+    }
     $(document).ready(function(){
         /*scroll to features*/
         $("a").on('click', function(event) {
@@ -48,18 +72,20 @@ app.controller('HomeCtrl', function($scope,$state, $window){
                 event.preventDefault();
                 var hash = this.hash;
                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){});
+                    scrollTop: $(hash).offset().top + ex_pixels
+                }, 1000, function(){});
             }
         });
 
-        // scroll body to 0px on click
-        $('#back-top a').click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 2000);
-            return false;
-        });
+        $('#feature1').on("error",(function(){
+            $(this).attr('src', '/images/feature1.png');
+        }));
+        $('#feature2').on("error",(function(){
+            $(this).attr('src', '/images/feature2.png');
+        }));
+        $('#feature3').on("error",(function(){
+            $(this).attr('src', '/images/feature3.png');
+        }));
     });
 
     var prevScrollpos = window.pageYOffset;
@@ -75,15 +101,18 @@ app.controller('HomeCtrl', function($scope,$state, $window){
             document.getElementById("navbar").style.top = "-70px";
         }
 
-        var z=260;
         var currentScrollPos = window.pageYOffset;
 
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar-menu-mobile").style.top = "0";
         } else {
-            document.getElementById("navbar-menu-mobile").style.top = "-260px";
+            document.getElementById("navbar-menu-mobile").style.top = "-380px";
         }
         prevScrollpos = currentScrollPos;
+    }
+
+    $scope.toggleClose = function(){
+        $(".con").click();
     }
 
     $scope.aboutus = function(){

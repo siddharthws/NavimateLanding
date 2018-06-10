@@ -92,15 +92,6 @@
     height: auto;
   }
 
-  .card-container {
-    margin-top: 0;
-    height: 100%;
-  }
-
-  .card-content {
-    padding-top: 200px;
-  }
-
   .flex-style-card {
     display: flex;
     flex-direction: column;
@@ -119,10 +110,6 @@
   .flex-style-info img{
     width: 100%;
     height: auto;
-  }
-
-  .card-content {
-    padding-top: 70px;
   }
 
   .w3-half {
